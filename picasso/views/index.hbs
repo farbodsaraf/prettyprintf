@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Picasso</title>
+  <style type="text/css">
+{{{fontFace}}}
+    html, body, pre {
+      margin: 0;
+      padding: 0;
+      font-family: '{{fontFamily}}' !important;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+
+      background-color: {{base03}};
+    }
+
+    .line {
+      height: 0.3vh;
+      width: 80vw;
+      margin: 5vh auto;
+      background-color: {{base0}};
+    }
+
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    pre {
+      font-size: 2vw;
+      line-height: 1.15em;
+      font-size: {{snippetFontSize}};
+    }
+
+    #title {
+      display: inline-block;
+      font-size: {{titleFontSize}};
+      text-align: center;
+      color: {{base0}};
+    }
+
+  </style>
+  <link rel="stylesheet" href="/palettes/{{palette}}.css">
+  <script src="/highlight.pack.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+  <div class="line"></div>
+  <div class="center-container">
+    <pre id="code"><code class="{{lang}}">{{snippet}}</code></pre>
+    <h1 id="title">{{printTitle}}</h1>
+  </div>
+  <div class="line"></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "thescream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Condon <m@cond.in> (http://mat.tc)",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "phantom": "^0.8.0"
+  }
+}
