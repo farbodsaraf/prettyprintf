@@ -1,9 +1,10 @@
 # Pretty Printf
 
-The code behind [http://prettyprintf.com](http://prettyprintf.com).
+![example.png](example.png)
 
-**stripeful** - The glue between Stripe and Printful
+The code that generates pretty prints like the image above.
 
-**picasso** - The poster generator
+**picasso** - The script to "paint" all of the images in the various permutations and generate the final shopify-compatible CSV
 
-**thedream** - The script to generate each individual poster
+**thedream** - The **slimerjs** script to visit picasso and save the resulting image.
+
